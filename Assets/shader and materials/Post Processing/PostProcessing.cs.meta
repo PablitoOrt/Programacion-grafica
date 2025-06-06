@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 1342f36c227dfe54fab8b6af24a2aa4e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - GrayScaleMaterial: {fileID: 2100000, guid: e4d2301b38141d34583d79081194df7a, type: 2}
+  - PixelatedMaterial: {fileID: 2100000, guid: 54e2cc092ea19cb4ba7806a867a6185a, type: 2}
+  - BlurMaterial: {fileID: 2100000, guid: 5c037eb7386872344ab39d7a9c6f211a, type: 2}
+  - grayScaleSlider: {instanceID: 0}
+  - pixelatedSlider: {instanceID: 0}
+  - blurinessSlider: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
