@@ -29,7 +29,7 @@ Material:
     - _Frecuency1: 3
     - _Height: 0.4
     - _Height1: 0.4
-    - __dirty: 0
+    - __dirty: 1
     m_Colors:
     - _Epicenter: {r: 0, g: 0, b: 10, a: 0}
     - _Epicenter1: {r: 1.5, g: 0, b: -51, a: 0}
