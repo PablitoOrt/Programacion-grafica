@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_Deformacion 1
-  m_Shader: {fileID: 4800000, guid: a376ced45145fba44af3d6730f68fa00, type: 3}
+  m_Name: M_ProyectorUnidades
+  m_Shader: {fileID: 4800000, guid: 35924a83197da1149b51fbcf37e9a7ce, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -22,13 +22,13 @@ Material:
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs: []
+    m_TexEnvs:
+    - _TextureSample0:
+        m_Texture: {fileID: 2800000, guid: 902b3cf7aca2d5f4cbda539fd1b446be, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
-    m_Floats:
-    - _EdgeLength: 2
-    - _Frecuency: 2.5
-    - _Height: 0.2
-    - __dirty: 1
+    m_Floats: []
     m_Colors:
-    - _Epicenter: {r: 0, g: 0, b: -30, a: 0}
+    - _Tiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
