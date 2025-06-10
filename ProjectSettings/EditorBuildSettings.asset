@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/4. Stencil Scene.unity
     guid: 6e6dab8cc37e72b4fb57f4dd48bf8e44
+  - enabled: 1
+    path: Assets/Scenes/5. Projector.unity
+    guid: e331c70968963d0428736750e28deeac
   m_configObjects: {}
