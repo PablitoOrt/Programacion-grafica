@@ -1,31 +1,62 @@
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
-[RequireComponent(typeof(Camera))]
+using TMPro;
 
 public class PostProcessing : MonoBehaviour
 {
+    [Header("Referencias")]
+    [SerializeField] private EffectRenderer effectRenderer; // arrastra la cámara con el script
+    [SerializeField] private TMP_Dropdown dropdown;
 
-    [SerializeField] Material GrayScaleMaterial;
+    [Header("Materials")]
+    [SerializeField] private Material grayScaleMaterial;
+    [SerializeField] private Material pixelMaterial;
 
-    [SerializeField] Slider grayScaleSlider;
+    [Header("Sliders")]
+    [SerializeField] private Slider graySlider;
+    [SerializeField] private Slider pixelSlider;
 
+    [Header("Panels")]
+    [SerializeField] private GameObject grayPanel;
+    [SerializeField] private GameObject pixelPanel;
+    [SerializeField] private GameObject vignettePanel;
 
     private void Start()
     {
-        grayScaleSlider.onValueChanged.AddListener(UpdateGrayScaleValue);
+        dropdown.onValueChanged.AddListener(OnEffectChanged);
+        OnEffectChanged(dropdown.value); // aplicar el actual al iniciar
+
+        if (graySlider != null)
+            graySlider.onValueChanged.AddListener(val => grayScaleMaterial.SetFloat("_intensity", val));
+
+        if (pixelSlider != null)
+            pixelSlider.onValueChanged.AddListener(val => pixelMaterial.SetFloat("_Resolution", val));
     }
 
-    private void OnRenderImage(RenderTexture source, RenderTexture destination)
+    private void OnEffectChanged(int index)
     {
-        Graphics.Blit(source, destination, GrayScaleMaterial);
-    }
+        grayPanel.SetActive(false);
+        pixelPanel.SetActive(false);
+        vignettePanel.SetActive(false);
 
-    private void UpdateGrayScaleValue(float value)
-    {
-        GrayScaleMaterial.SetFloat("_intensity", value) ;
+        switch (index)
+        {
+            case 0: // Grayscale
+                effectRenderer.currentEffectMaterial = grayScaleMaterial;
+                grayPanel.SetActive(true);
+                break;
+            case 1: // Pixelation
+                effectRenderer.currentEffectMaterial = pixelMaterial;
+                pixelPanel.SetActive(true);
+                break;
+            case 2: // Vignette
+                effectRenderer.currentEffectMaterial = null;
+                vignettePanel.SetActive(true);
+                break;
+            default:
+                effectRenderer.currentEffectMaterial = null;
+                break;
+        }
     }
-
 }

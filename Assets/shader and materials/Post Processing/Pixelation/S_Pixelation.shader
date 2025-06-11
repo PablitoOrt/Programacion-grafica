@@ -1,11 +1,11 @@
 // Made with Amplify Shader Editor
 // Available at the Unity Asset Store - http://u3d.as/y3X 
-Shader "S_Pixelated"
+Shader "S_Pixelation"
 {
 	Properties
 	{
 		_MainTex ( "Screen", 2D ) = "black" {}
-		_Resolution("Resolution", Float) = 64
+		_Resolution("Resolution", Range( 32 , 128)) = 64
 
 	}
 
@@ -105,15 +105,15 @@ Shader "S_Pixelated"
 }
 /*ASEBEGIN
 Version=18900
-665;73;917;683;1425.095;556.0077;1.577674;False;False
+655;73;886;628;1477.721;184.4289;1;False;False
 Node;AmplifyShaderEditor.TextureCoordinatesNode;1;-1252.416,28.51145;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.RangedFloatNode;2;-1189.499,161.7463;Inherit;False;Property;_Resolution;Resolution;0;0;Create;True;0;0;0;False;0;False;64;0;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;2;-1295.499,177.7463;Inherit;False;Property;_Resolution;Resolution;0;0;Create;True;0;0;0;False;0;False;64;0.6174682;32;128;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;3;-1023.975,30.36884;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0
 Node;AmplifyShaderEditor.FloorOpNode;4;-872.6407,31.10301;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0
 Node;AmplifyShaderEditor.SimpleDivideOpNode;6;-732.9807,31.46154;Inherit;False;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0
 Node;AmplifyShaderEditor.TemplateShaderPropertyNode;15;-734.8734,-91.7757;Inherit;False;0;0;_MainTex;Shader;False;0;5;SAMPLER2D;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.SamplerNode;11;-575.3228,1.156377;Inherit;True;Property;_TextureSample0;Texture Sample 0;1;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;14;-238.8132,-158.4467;Float;False;True;-1;2;ASEMaterialInspector;0;2;S_Pixelated;c71b220b631b6344493ea3cf87110c93;True;SubShader 0 Pass 0;0;0;SubShader 0 Pass 0;1;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;2;False;-1;False;False;False;False;False;False;False;False;False;False;False;True;2;False;-1;True;7;False;-1;False;True;0;False;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;2;0;;0;0;Standard;0;0;1;True;False;;False;0
+Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;14;-238.8132,-158.4467;Float;False;True;-1;2;ASEMaterialInspector;0;2;S_Pixelation;c71b220b631b6344493ea3cf87110c93;True;SubShader 0 Pass 0;0;0;SubShader 0 Pass 0;1;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;2;False;-1;False;False;False;False;False;False;False;False;False;False;False;True;2;False;-1;True;7;False;-1;False;True;0;False;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;2;0;;0;0;Standard;0;0;1;True;False;;False;0
 WireConnection;3;0;1;0
 WireConnection;3;1;2;0
 WireConnection;4;0;3;0
@@ -123,4 +123,4 @@ WireConnection;11;0;15;0
 WireConnection;11;1;6;0
 WireConnection;14;0;11;0
 ASEEND*/
-//CHKSM=2C756602D1EF4698BEB545C9F0046DEDCAC784ED
+//CHKSM=81BDD65EA2EB10B36C2ED3E41880B8C330FD11DB

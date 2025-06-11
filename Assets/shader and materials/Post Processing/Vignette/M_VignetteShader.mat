@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: VignetteShader
+  m_Name: M_VignetteShader
   m_Shader: {fileID: 4800000, guid: af1f9104eadbf054687bc11f54088ee7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -39,11 +39,11 @@ Material:
     m_Floats:
     - _Falloff: 0
     - _Intensity: 1
-    - _MaskHardness: 0.27826104
+    - _MaskHardness: 0.65011245
     - _MaskHardness1: 0
-    - _MaskPower: 1
+    - _MaskPower: 0.6749442
     - _MaskPower1: 5
-    - _MaskScale: 0.8347822
+    - _MaskScale: 1.176395
     - _MaskScale1: 0
     - _intensity: 0.75
     m_Colors:
