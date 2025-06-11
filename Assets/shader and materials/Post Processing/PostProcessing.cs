@@ -25,7 +25,7 @@ public class PostProcessing : MonoBehaviour
 
     private void UpdateGrayScaleValue(float value)
     {
-        GrayScaleMaterial.SetFloat("_intensity", value);
+        GrayScaleMaterial.SetFloat("_intensity", value) ;
     }
 
 }

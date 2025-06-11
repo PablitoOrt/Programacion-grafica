@@ -110,8 +110,8 @@ Shader "S_GrayScale"
 }
 /*ASEBEGIN
 Version=18900
-769;73;570;659;442.2168;340.497;1;False;False
-Node;AmplifyShaderEditor.TemplateShaderPropertyNode;1;-633.9261,-16.17859;Inherit;False;0;0;_MainTex;Shader;False;0;5;SAMPLER2D;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+160;81;790;644;915.3105;522.8382;1.677306;False;False
+Node;AmplifyShaderEditor.TemplateShaderPropertyNode;1;-751.7726,-28.0822;Inherit;True;0;0;_MainTex;Shader;False;0;5;SAMPLER2D;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.SamplerNode;3;-495.7283,-26.66999;Inherit;True;Property;_TextureSample0;Texture Sample 0;0;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.RangedFloatNode;5;-473.188,-146.9183;Inherit;False;Property;_intensity;intensity;0;0;Create;True;0;0;0;False;0;False;0;0;0;1;0;1;FLOAT;0
 Node;AmplifyShaderEditor.TFHCGrayscale;2;-144.7281,-3.669983;Inherit;False;0;1;0;FLOAT3;0,0,0;False;1;FLOAT;0
@@ -124,4 +124,4 @@ WireConnection;4;1;2;0
 WireConnection;4;2;5;0
 WireConnection;0;0;4;0
 ASEEND*/
-//CHKSM=BDEEC615A570992CEA660252EDE628C42B5D3F1B
+//CHKSM=1F626F2F941FA0F8D5FD0CB10B9834C14EBB6BFA
