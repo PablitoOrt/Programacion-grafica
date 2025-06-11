@@ -680,7 +680,6 @@ GameObject:
   - component: {fileID: 331997539}
   - component: {fileID: 331997541}
   - component: {fileID: 331997543}
-  - component: {fileID: 331997542}
   - component: {fileID: 331997538}
   - component: {fileID: 331997537}
   m_Layer: 0
@@ -778,22 +777,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   mouseSensitivity: 2
---- !u!114 &331997542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 331997536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cbaf476dadf5644db863000d2a6e207, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vignetteMaterial: {fileID: 2100000, guid: 5a479aa5d2f1db44cbe899004d332f52, type: 2}
-  PowerSlider: {fileID: 1063377759}
-  HardnessSlider: {fileID: 458095131}
-  ScaleSlider: {fileID: 765599802}
 --- !u!114 &331997543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1153,8 +1136,12 @@ MonoBehaviour:
   dropdown: {fileID: 1696015937}
   grayScaleMaterial: {fileID: 2100000, guid: e4d2301b38141d34583d79081194df7a, type: 2}
   pixelMaterial: {fileID: 2100000, guid: 54e2cc092ea19cb4ba7806a867a6185a, type: 2}
+  vignetteMaterial: {fileID: 2100000, guid: 5a479aa5d2f1db44cbe899004d332f52, type: 2}
   graySlider: {fileID: 2000608103}
   pixelSlider: {fileID: 1755226002}
+  vignettePowerSlider: {fileID: 1063377759}
+  vignetteHardnessSlider: {fileID: 458095131}
+  vignetteScaleSlider: {fileID: 765599802}
   grayPanel: {fileID: 741395682}
   pixelPanel: {fileID: 107527499}
   vignettePanel: {fileID: 229809254}
@@ -3762,10 +3749,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e67835ee0ca3e304e97c6d063ac017f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dropdown: {fileID: 1696015937}
-  grayPanel: {fileID: 741395682}
-  pixelPanel: {fileID: 107527499}
-  vignettePanel: {fileID: 229809254}
 --- !u!1 &1706421693
 GameObject:
   m_ObjectHideFlags: 0
