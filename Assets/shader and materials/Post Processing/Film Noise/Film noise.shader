@@ -124,7 +124,7 @@ Shader "Film noise"
 				simplePerlin2D35 = simplePerlin2D35*0.5 + 0.5;
 				float2 temp_cast_0 = (simplePerlin2D35).xx;
 				float4 lerpResult38 = lerp( tex2D( _MainTex, uv_MainTex ) , tex2D( _MainTex, temp_cast_0 ) , 0.2);
-				float4 color46 = IsGammaSpace() ? float4(0.3679245,0.3679245,0.3679245,0) : float4(0.1114872,0.1114872,0.1114872,0);
+				float4 color46 = IsGammaSpace() ? float4(0.5566038,0.5566038,0.5566038,0) : float4(0.2702231,0.2702231,0.2702231,0);
 				
 
 				finalColor = ( lerpResult38 * color46 );
@@ -140,9 +140,9 @@ Shader "Film noise"
 }
 /*ASEBEGIN
 Version=18900
-200;73;1101;736;1558.582;167.7108;1;True;False
+510;73;1075;652;769.3668;20.46906;1;False;False
 Node;AmplifyShaderEditor.TextureCoordinatesNode;53;-1283.182,-158.6691;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.RangedFloatNode;29;-1273.794,181.7558;Inherit;True;Property;_NoiseIntensity;_NoiseIntensity;0;0;Create;True;0;0;0;False;0;False;128;258;128;400;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;29;-1273.794,181.7558;Inherit;True;Property;_NoiseIntensity;_NoiseIntensity;0;0;Create;True;0;0;0;False;0;False;128;400;128;400;0;1;FLOAT;0
 Node;AmplifyShaderEditor.TemplateShaderPropertyNode;33;-930.3578,-117.1705;Inherit;False;0;0;_MainTex;Shader;False;0;5;SAMPLER2D;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.NoiseGeneratorNode;35;-980.5679,-18.01894;Inherit;True;Simplex2D;True;False;2;0;FLOAT2;0,0;False;1;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.TemplateShaderPropertyNode;49;-820.8741,254.7442;Inherit;False;0;0;_MainTex;Shader;False;0;5;SAMPLER2D;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
@@ -150,7 +150,7 @@ Node;AmplifyShaderEditor.SamplerNode;34;-553.166,-79.11977;Inherit;True;Property
 Node;AmplifyShaderEditor.SamplerNode;48;-612.1308,241.2669;Inherit;True;Property;_TextureSample2;Texture Sample 1;1;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.RangedFloatNode;42;-495.2298,123.293;Inherit;False;Constant;_opacity;opacity;1;0;Create;True;0;0;0;False;0;False;0.2;0.2;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.LerpOp;38;-246.0112,86.02306;Inherit;False;3;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;FLOAT;0;False;1;COLOR;0
-Node;AmplifyShaderEditor.ColorNode;46;-179.5028,274.5239;Inherit;False;Constant;_Color0;Color 0;5;0;Create;True;0;0;0;False;0;False;0.3679245,0.3679245,0.3679245,0;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.ColorNode;46;-258.5028,273.5239;Inherit;False;Constant;_Color0;Color 0;5;0;Create;True;0;0;0;False;0;False;0.5566038,0.5566038,0.5566038,0;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;44;21.24431,85.3984;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;0;164.7804,-11.42042;Float;False;True;-1;2;ASEMaterialInspector;0;2;Film noise;c71b220b631b6344493ea3cf87110c93;True;SubShader 0 Pass 0;0;0;SubShader 0 Pass 0;1;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;2;False;-1;False;False;False;False;False;False;False;False;False;False;False;True;2;False;-1;True;7;False;-1;False;True;0;False;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;2;0;;0;0;Standard;0;0;1;True;False;;False;0
 WireConnection;35;0;53;0
@@ -165,4 +165,4 @@ WireConnection;44;0;38;0
 WireConnection;44;1;46;0
 WireConnection;0;0;44;0
 ASEEND*/
-//CHKSM=E19A69489B6EFB55AAC96D41F6D084C40C8B82C2
+//CHKSM=E79175E84385F9131E8ADD577B7278EE7BE7A478

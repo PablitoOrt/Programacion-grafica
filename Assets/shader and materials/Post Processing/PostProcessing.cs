@@ -1,7 +1,6 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class PostProcessing : MonoBehaviour
 {
@@ -13,18 +12,21 @@ public class PostProcessing : MonoBehaviour
     [SerializeField] private Material grayScaleMaterial;
     [SerializeField] private Material pixelMaterial;
     [SerializeField] private Material vignetteMaterial;
+    [SerializeField] private Material filmNoiseMaterial;
 
     [Header("Sliders")]
     [SerializeField] private Slider graySlider;
     [SerializeField] private Slider pixelSlider;
-    [SerializeField] private Slider vignettePowerSlider; 
+    [SerializeField] private Slider vignettePowerSlider;
     [SerializeField] private Slider vignetteHardnessSlider;
     [SerializeField] private Slider vignetteScaleSlider;
+    [SerializeField] private Slider filmNoiseSlider;
 
     [Header("Panels")]
     [SerializeField] private GameObject grayPanel;
     [SerializeField] private GameObject pixelPanel;
     [SerializeField] private GameObject vignettePanel;
+    [SerializeField] private GameObject filmNoisePanel;
 
     private void Start()
     {
@@ -43,6 +45,9 @@ public class PostProcessing : MonoBehaviour
             vignetteHardnessSlider.onValueChanged.AddListener(val => vignetteMaterial.SetFloat("_MaskHardness", val));
         if (vignetteScaleSlider != null)
             vignetteScaleSlider.onValueChanged.AddListener(val => vignetteMaterial.SetFloat("_MaskScale", val));
+
+        if (filmNoiseSlider != null)
+            filmNoiseSlider.onValueChanged.AddListener(val => filmNoiseMaterial.SetFloat("_NoiseIntensity", val));
     }
 
     private void OnEffectChanged(int index)
@@ -50,6 +55,7 @@ public class PostProcessing : MonoBehaviour
         grayPanel.SetActive(false);
         pixelPanel.SetActive(false);
         vignettePanel.SetActive(false);
+        filmNoisePanel.SetActive(false);
 
         switch (index)
         {
@@ -64,6 +70,10 @@ public class PostProcessing : MonoBehaviour
             case 2: // Vignette
                 effectRenderer.currentEffectMaterial = vignetteMaterial;
                 vignettePanel.SetActive(true);
+                break;
+            case 3: // FilmNoise
+                effectRenderer.currentEffectMaterial = filmNoiseMaterial;
+                filmNoisePanel.SetActive(true);
                 break;
             default:
                 effectRenderer.currentEffectMaterial = null;

@@ -39,11 +39,11 @@ Material:
     m_Floats:
     - _Falloff: 0
     - _Intensity: 1
-    - _MaskHardness: 0.54432285
+    - _MaskHardness: 0.3927499
     - _MaskHardness1: 0
-    - _MaskPower: 0.10620902
+    - _MaskPower: 0.9640224
     - _MaskPower1: 5
-    - _MaskScale: 1.1417497
+    - _MaskScale: 1.1996007
     - _MaskScale1: 0
     - _intensity: 0.75
     m_Colors:
