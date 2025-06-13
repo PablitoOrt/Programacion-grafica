@@ -13,6 +13,8 @@ public class PostProcessing : MonoBehaviour
     [SerializeField] private Material pixelMaterial;
     [SerializeField] private Material vignetteMaterial;
     [SerializeField] private Material filmNoiseMaterial;
+    [SerializeField] private Material bloomMaterial;
+
 
     [Header("Sliders")]
     [SerializeField] private Slider graySlider;
@@ -21,12 +23,16 @@ public class PostProcessing : MonoBehaviour
     [SerializeField] private Slider vignetteHardnessSlider;
     [SerializeField] private Slider vignetteScaleSlider;
     [SerializeField] private Slider filmNoiseSlider;
+    [SerializeField] private Slider bloomIntensitySlider;
+
 
     [Header("Panels")]
     [SerializeField] private GameObject grayPanel;
     [SerializeField] private GameObject pixelPanel;
     [SerializeField] private GameObject vignettePanel;
     [SerializeField] private GameObject filmNoisePanel;
+    [SerializeField] private GameObject bloomPanel;
+
 
     private void Start()
     {
@@ -48,6 +54,9 @@ public class PostProcessing : MonoBehaviour
 
         if (filmNoiseSlider != null)
             filmNoiseSlider.onValueChanged.AddListener(val => filmNoiseMaterial.SetFloat("_NoiseIntensity", val));
+
+        if (bloomIntensitySlider != null)
+            bloomIntensitySlider.onValueChanged.AddListener(val => bloomMaterial.SetFloat("_Bloomintensity", val));
     }
 
     private void OnEffectChanged(int index)
@@ -56,6 +65,7 @@ public class PostProcessing : MonoBehaviour
         pixelPanel.SetActive(false);
         vignettePanel.SetActive(false);
         filmNoisePanel.SetActive(false);
+        bloomPanel.SetActive(false);
 
         switch (index)
         {
@@ -74,6 +84,10 @@ public class PostProcessing : MonoBehaviour
             case 3: // FilmNoise
                 effectRenderer.currentEffectMaterial = filmNoiseMaterial;
                 filmNoisePanel.SetActive(true);
+                break;
+            case 4: // Bloom
+                effectRenderer.currentEffectMaterial = bloomMaterial;
+                bloomPanel.SetActive(true);
                 break;
             default:
                 effectRenderer.currentEffectMaterial = null;

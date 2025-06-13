@@ -44,7 +44,7 @@ Material:
     - _Float0: 0.2
     - _Noise: 0.6174682
     - _NoiseINtensity: 0
-    - _NoiseIntensity: 400
+    - _NoiseIntensity: 229.5982
     - _Resolution: 64
     - _filmnoise: 258
     - _opacity: 0.2
