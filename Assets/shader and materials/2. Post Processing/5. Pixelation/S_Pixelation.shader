@@ -105,9 +105,9 @@ Shader "S_Pixelation"
 }
 /*ASEBEGIN
 Version=18900
-655;73;886;628;1477.721;184.4289;1;False;False
+634;73;838;596;1380.977;151.8264;1;False;False
 Node;AmplifyShaderEditor.TextureCoordinatesNode;1;-1252.416,28.51145;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.RangedFloatNode;2;-1295.499,177.7463;Inherit;False;Property;_Resolution;Resolution;0;0;Create;True;0;0;0;False;0;False;64;0.6174682;32;128;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;2;-1295.499,177.7463;Inherit;False;Property;_Resolution;Resolution;0;0;Create;True;0;0;0;False;0;False;64;32;32;128;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;3;-1023.975,30.36884;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0
 Node;AmplifyShaderEditor.FloorOpNode;4;-872.6407,31.10301;Inherit;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0
 Node;AmplifyShaderEditor.SimpleDivideOpNode;6;-732.9807,31.46154;Inherit;False;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0
@@ -123,4 +123,4 @@ WireConnection;11;0;15;0
 WireConnection;11;1;6;0
 WireConnection;14;0;11;0
 ASEEND*/
-//CHKSM=81BDD65EA2EB10B36C2ED3E41880B8C330FD11DB
+//CHKSM=B031356F737194844E547537FADB5E6E991FD6F6

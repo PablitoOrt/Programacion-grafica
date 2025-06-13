@@ -30,7 +30,7 @@ Material:
     - _EdgeLength: 2
     - _Frecuency: 1.9720243
     - _Height: 0.154
-    - __dirty: 0
+    - __dirty: 1
     m_Colors:
     - _Epicenter: {r: 0, g: 0, b: -10, a: 0}
   m_BuildTextureStacks: []

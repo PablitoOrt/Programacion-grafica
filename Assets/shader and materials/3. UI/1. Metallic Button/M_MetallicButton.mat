@@ -41,7 +41,7 @@ Material:
     - _ColorMask: 15
     - _Float1: 0.35
     - _Hardness: 1.37
-    - _Sharpness: 2.315066
+    - _Sharpness: 2
     - _Speed: 0.35
     - _Stencil: 0
     - _StencilComp: 8
@@ -52,7 +52,7 @@ Material:
     - _sharpness: 2.315066
     - _speed: 0.35
     m_Colors:
-    - _BaseColor: {r: 0.5566037, g: 0.46654928, b: 0.17065674, a: 1}
+    - _BaseColor: {r: 0.5566037, g: 0.46654922, b: 0.17065671, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _lineColor: {r: 0.9433962, g: 0.91156775, b: 0.41384822, a: 1}
+    - _lineColor: {r: 0.9433962, g: 0.91156775, b: 0.4138482, a: 1}
   m_BuildTextureStacks: []

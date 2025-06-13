@@ -47,5 +47,6 @@ Material:
     - _NoiseIntensity: 400
     - _Resolution: 64
     - _filmnoise: 258
+    - _opacity: 0.2
     m_Colors: []
   m_BuildTextureStacks: []

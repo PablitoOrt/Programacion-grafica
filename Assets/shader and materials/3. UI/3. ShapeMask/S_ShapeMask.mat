@@ -23,6 +23,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _HeartMask:
+        m_Texture: {fileID: 2800000, guid: c8946b6f5dfb843479d5d19786937cbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _ImageTexture:
         m_Texture: {fileID: 2800000, guid: e4cfc3e93092e704c8e777c6073f65a1, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -35,6 +39,14 @@ Material:
         m_Texture: {fileID: 2800000, guid: c8946b6f5dfb843479d5d19786937cbb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _MaskTexture1:
+        m_Texture: {fileID: 2800000, guid: 2e4c0a8687de85a4890d9c0dab5a2902, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _StarMask:
+        m_Texture: {fileID: 2800000, guid: 2e4c0a8687de85a4890d9c0dab5a2902, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _texcoord:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -42,6 +54,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _ColorMask: 15
+    - _Mask: 0
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0

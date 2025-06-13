@@ -39,7 +39,7 @@ Material:
     - _WaterFrequency: 8
     - _WaterHeight: 0.1
     - _WaterSpeed: 2
-    - __dirty: 0
+    - __dirty: 1
     - _speed: 2
     m_Colors:
     - _Epicenter: {r: 0, g: 0, b: -50, a: 0}

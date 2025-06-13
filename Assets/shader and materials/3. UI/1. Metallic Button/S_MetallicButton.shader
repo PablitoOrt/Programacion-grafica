@@ -17,7 +17,7 @@ Shader "S_MetallicButton"
 
 		[Toggle(UNITY_UI_ALPHACLIP)] _UseUIAlphaClip ("Use Alpha Clip", Float) = 0
 		_Speed("Speed", Range( 0 , 1)) = 0.1
-		_Sharpness("Sharpness", Range( 1 , 4)) = 1.326831
+		_Sharpness("Sharpness", Range( 1 , 8)) = 1.326831
 		_Angle("Angle", Range( 0 , 90)) = 20.70817
 		_BaseColor("BaseColor", Color) = (1,1,1,1)
 		_lineColor("lineColor", Color) = (0,0,0,1)
@@ -156,11 +156,11 @@ Shader "S_MetallicButton"
 }
 /*ASEBEGIN
 Version=18900
-876;73;709;645;534.1944;1362.291;1;False;False
+1164;73;514;689;1426.293;1724.602;1;False;False
 Node;AmplifyShaderEditor.CommentaryNode;63;-2045.155,-1307.078;Inherit;False;1325.706;362.853;angulo de la linea;10;64;56;57;58;60;59;62;61;27;26;;1,1,1,1;0;0
 Node;AmplifyShaderEditor.RangedFloatNode;57;-1998.562,-1040.818;Inherit;False;Property;_Angle;Angle;2;0;Create;True;0;0;0;False;0;False;20.70817;28;0;90;0;1;FLOAT;0
-Node;AmplifyShaderEditor.TexCoordVertexDataNode;26;-1874.518,-1257.052;Inherit;True;0;2;0;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.RadiansOpNode;58;-1723.211,-1036.219;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.TexCoordVertexDataNode;26;-1874.518,-1257.052;Inherit;True;0;2;0;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.BreakToComponentsNode;27;-1633.207,-1257.078;Inherit;False;FLOAT2;1;0;FLOAT2;0,0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15
 Node;AmplifyShaderEditor.CosOpNode;59;-1563.642,-1128.992;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SinOpNode;60;-1561.047,-1037.907;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
@@ -179,11 +179,11 @@ Node;AmplifyShaderEditor.SimpleSubtractOpNode;42;-1326.348,-1604.254;Inherit;Fal
 Node;AmplifyShaderEditor.AbsOpNode;43;-1194.928,-1603.517;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;45;-1063.088,-1603.812;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;2;False;1;FLOAT;0
 Node;AmplifyShaderEditor.OneMinusNode;46;-926.2877,-1604.513;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.RangedFloatNode;48;-1069.287,-1483.215;Inherit;False;Property;_Sharpness;Sharpness;1;0;Create;True;0;0;0;False;0;False;1.326831;2.315066;1;4;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;48;-1069.287,-1483.215;Inherit;False;Property;_Sharpness;Sharpness;1;0;Create;True;0;0;0;False;0;False;1.326831;2;1;8;0;1;FLOAT;0
 Node;AmplifyShaderEditor.PowerNode;47;-769.9875,-1603.813;Inherit;True;False;2;0;FLOAT;0;False;1;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.RegisterLocalVarNode;51;-532.6081,-1607.827;Inherit;False;Brillo;-1;True;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.GetLocalVarNode;52;-609.8335,-918.5216;Inherit;False;51;Brillo;1;0;OBJECT;;False;1;FLOAT;0
-Node;AmplifyShaderEditor.ColorNode;66;-646.7541,-1286.297;Inherit;False;Property;_BaseColor;BaseColor;3;0;Create;True;0;0;0;False;0;False;1,1,1,1;0.5566037,0.4665493,0.1706567,1;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.ColorNode;66;-646.7541,-1286.297;Inherit;False;Property;_BaseColor;BaseColor;3;0;Create;True;0;0;0;False;0;False;1,1,1,1;0.5566037,0.4665492,0.1706567,1;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.ColorNode;31;-648.6221,-1110.623;Inherit;False;Property;_lineColor;lineColor;4;0;Create;True;0;0;0;False;0;False;0,0,0,1;0.9433962,0.9115677,0.4138482,1;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.LerpOp;67;-342.4911,-1082.008;Inherit;False;3;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;FLOAT;0;False;1;COLOR;0
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;0;-155.2882,-1082.558;Float;False;True;-1;2;ASEMaterialInspector;0;4;S_MetallicButton;5056123faa0c79b47ab6ad7e8bf059a4;True;Default;0;0;Default;2;False;True;2;5;False;-1;10;False;-1;0;1;False;-1;0;False;-1;False;False;False;False;False;False;False;False;False;False;False;False;True;2;False;-1;False;True;True;True;True;True;0;True;-9;False;False;False;False;False;False;False;True;True;0;True;-5;255;True;-8;255;True;-7;0;True;-4;0;True;-6;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;True;2;False;-1;True;0;True;-11;False;True;5;Queue=Transparent=Queue=0;IgnoreProjector=True;RenderType=Transparent=RenderType;PreviewType=Plane;CanUseSpriteAtlas=True;False;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;2;0;;0;0;Standard;0;0;1;True;False;;False;0
@@ -215,4 +215,4 @@ WireConnection;67;1;31;0
 WireConnection;67;2;52;0
 WireConnection;0;0;67;0
 ASEEND*/
-//CHKSM=805454A11A8EF7BE343932199B521D9F562EA4FD
+//CHKSM=38C6623E0E11BEB0D6AD85A5DADBA9B57F4C6B2D
