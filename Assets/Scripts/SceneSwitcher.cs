@@ -19,7 +19,10 @@ public class SceneSwitcher : MonoBehaviour
             int prevScene = (current - 1 + SceneManager.sceneCountInBuildSettings) % SceneManager.sceneCountInBuildSettings;
             SceneManager.LoadScene(prevScene);
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 }
-
-
