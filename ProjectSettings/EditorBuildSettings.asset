@@ -18,9 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/3. Sprites & UI Scene.unity
     guid: ef487fddf7005684fbc84c391b717e9a
   - enabled: 1
-    path: Assets/Scenes/4. Stencil Scene.unity
+    path: Assets/Scenes/5. Stencil Scene.unity
     guid: 6e6dab8cc37e72b4fb57f4dd48bf8e44
   - enabled: 1
-    path: Assets/Scenes/5. Projector.unity
+    path: Assets/Scenes/6. Projector.unity
     guid: e331c70968963d0428736750e28deeac
   m_configObjects: {}
