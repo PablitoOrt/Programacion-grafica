@@ -6,24 +6,58 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/0. Menu Scene.unity
+    path: Assets/Grupo 00/00 - General/00 - Menu.unity
     guid: 4af9f44a539813f4b844bb2b72b38889
   - enabled: 1
-    path: Assets/Scenes/1. Render Texture & Distance Scene.unity
+    path: Assets/Grupo 00/01 - Render Texture & Distance/01 - Distance.unity
+    guid: fc356feaf25b3b84ba6e581905b20f2d
+  - enabled: 1
+    path: Assets/Grupo 00/02 - Objects deformed by distance/02 - Objects deform by
+      distance.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/2. Post Processing Scene.unity
+    path: Assets/Grupo 00/03 - RObjects move by distance/03 - Move by distance.unity
+    guid: 99868acc5b109324f849e0ce2e6d2c57
+  - enabled: 1
+    path: Assets/Grupo 00/04 - Water/04 - Water.unity
+    guid: e2844e8e71fbcae459b0bfb48243551b
+  - enabled: 1
+    path: Assets/Grupo 00/05 - Gray Scale Post Process/05 - GrayScale.unity
     guid: ea37dd079daf82049bd4304c4ebaf0ff
   - enabled: 1
-    path: Assets/Scenes/3. Sprites & UI Scene.unity
+    path: Assets/Grupo 00/06 - Vignette Post Process/06 - Vignette.unity
+    guid: 5add2d045649d1544b3a35c6780ca4a6
+  - enabled: 1
+    path: Assets/Grupo 00/07 - Film Noise Post Process/07 - Film Noise.unity
+    guid: e2f10ef5be3d7544e83be70c33191b51
+  - enabled: 1
+    path: Assets/Grupo 00/08 - Bloom Post Process/08 - Bloom.unity
+    guid: c285c472e0a09874d9e19a6be55b5141
+  - enabled: 1
+    path: Assets/Grupo 00/09 - Pixel Post Process/09 - Pixelation.unity
+    guid: 9b600be165a0da84184f0aa8e8e528aa
+  - enabled: 1
+    path: Assets/Grupo 00/10 - Metallic Button/10 - Metallic Button.unity
     guid: ef487fddf7005684fbc84c391b717e9a
   - enabled: 1
-    path: Assets/Scenes/4. Sprites & UI.unity
+    path: Assets/Grupo 00/11 - Burn Button/11 - Burn Button.unity
     guid: 971c825d383e66246bcf30fdb5ef13fa
   - enabled: 1
-    path: Assets/Scenes/5. Stencil Scene.unity
+    path: Assets/Grupo 00/12 - Mask/12 - Mask.unity
+    guid: bfdced1c2dbe2c34ebeefdc3b6b40b49
+  - enabled: 1
+    path: Assets/Grupo 00/13 - Outline Button/13 - Outline Button.unity
+    guid: 16b98e7bced2376458840cdad736db0c
+  - enabled: 1
+    path: Assets/Grupo 00/14 - Lens Distortion/14 - Lens Distortion.unity
+    guid: 9bd0b34f16fe8704788a0dcdcc4f3d3f
+  - enabled: 1
+    path: Assets/Grupo 00/15 - Stencil/16 - Stencil Scene.unity
     guid: 6e6dab8cc37e72b4fb57f4dd48bf8e44
   - enabled: 1
-    path: Assets/Scenes/6. Projector.unity
+    path: Assets/Grupo 00/16 - Static Projector/16 - Static Projector.unity
     guid: e331c70968963d0428736750e28deeac
+  - enabled: 1
+    path: Assets/Grupo 00/17 - Spinning Projector/17 - Spinning Projector.unity
+    guid: d630222332012c144935c41e6827d8de
   m_configObjects: {}
